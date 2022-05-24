@@ -1,0 +1,16 @@
+I:\csharpegitim\WpFinal\WpFinal\obj\Debug\WpFinal.csproj.AssemblyReference.cache
+I:\csharpegitim\WpFinal\WpFinal\obj\Debug\WpFinal.csproj.SuggestedBindingRedirects.cache
+I:\csharpegitim\WpFinal\WpFinal\obj\Debug\MainWindow.g.cs
+I:\csharpegitim\WpFinal\WpFinal\obj\Debug\App.g.cs
+I:\csharpegitim\WpFinal\WpFinal\obj\Debug\WpFinal_MarkupCompile.cache
+I:\csharpegitim\WpFinal\WpFinal\obj\Debug\WpFinal_MarkupCompile.lref
+I:\csharpegitim\WpFinal\WpFinal\bin\Debug\WpFinal.exe.config
+I:\csharpegitim\WpFinal\WpFinal\bin\Debug\WpFinal.exe
+I:\csharpegitim\WpFinal\WpFinal\bin\Debug\WpFinal.pdb
+I:\csharpegitim\WpFinal\WpFinal\obj\Debug\MainWindow.baml
+I:\csharpegitim\WpFinal\WpFinal\obj\Debug\WpFinal.g.resources
+I:\csharpegitim\WpFinal\WpFinal\obj\Debug\WpFinal.Properties.Resources.resources
+I:\csharpegitim\WpFinal\WpFinal\obj\Debug\WpFinal.csproj.GenerateResource.cache
+I:\csharpegitim\WpFinal\WpFinal\obj\Debug\WpFinal.csproj.CoreCompileInputs.cache
+I:\csharpegitim\WpFinal\WpFinal\obj\Debug\WpFinal.exe
+I:\csharpegitim\WpFinal\WpFinal\obj\Debug\WpFinal.pdb

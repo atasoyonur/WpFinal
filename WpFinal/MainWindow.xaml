@@ -1,0 +1,59 @@
+﻿<Window x:Class="WpFinal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpFinal"
+
+        mc:Ignorable="d"
+        Title="Otobüs Sefer İşlemleri" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="/bus.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dg1" Grid.Column="1" Grid.RowSpan="2" ColumnWidth="*" IsReadOnly="True"/>
+        <Label Content="Hat Numarası" HorizontalAlignment="Left" Margin="26,41,0,0" VerticalAlignment="Top" Width="125"/>
+        <TextBox x:Name="HatNo" HorizontalAlignment="Left" Margin="216,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" MouseEnter="HatNo_MouseEnter" MouseLeave="HatNo_MouseLeave"/>
+        <Button x:Name="ekle" Click="btnAdd" Content="Ekle" HorizontalAlignment="Left" Margin="295,137,0,0" VerticalAlignment="Top" Width="79" />
+        <Label Content="Hat Adı" HorizontalAlignment="Left" Margin="26,64,0,0" VerticalAlignment="Top" Width="125"/>
+        <TextBox x:Name="hatAdi" HorizontalAlignment="Left" Margin="216,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" MouseEnter="hatAdi_MouseEnter" MouseLeave="hatAdi_MouseLeave" />
+        <Label Content="Kullanan Şoför Ad Soyad" HorizontalAlignment="Left" Margin="26,87,0,0" VerticalAlignment="Top" Width="146"/>
+        <TextBox x:Name="hatSofor" HorizontalAlignment="Left" Margin="216,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" MouseEnter="hatSofor_MouseEnter" MouseLeave="hatSofor_MouseLeave" />
+        <Label Content="Hat Uzunluğu" HorizontalAlignment="Left" Margin="26,113,0,0" VerticalAlignment="Top" Width="125"/>
+        <TextBox x:Name="hatUzunluk" HorizontalAlignment="Left" Margin="216,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" MouseEnter="hatUzunluk_MouseEnter" MouseLeave="hatUzunluk_MouseLeave" />
+
+
+        <Label Content="Hat Numarası" HorizontalAlignment="Left" Margin="26,36,0,0" VerticalAlignment="Top" Width="125" Grid.Row="1"/>
+        <TextBox x:Name="HatNoS" HorizontalAlignment="Left" Margin="216,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Grid.Row="1" MouseEnter="HatNoS_MouseEnter" MouseLeave="HatNoS_MouseLeave" Text="{Binding ElementName=dg1,Path=SelectedItem.HatNumarasi}"/>
+        <Button x:Name="Güncelle" Click="btnUpdate"  Content="Güncelle" HorizontalAlignment="Left" Margin="295,132,0,0" VerticalAlignment="Top" Width="79" Grid.Row="1"/>
+        <Label Content="Hat Adı" HorizontalAlignment="Left" Margin="26,59,0,0" VerticalAlignment="Top" Width="125" Grid.Row="1"/>
+        <TextBox x:Name="hatAdiS" HorizontalAlignment="Left" Margin="216,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Grid.Row="1" MouseEnter="hatAdiS_MouseEnter" MouseLeave="hatAdiS_MouseLeave" Text="{Binding ElementName=dg1,Path=SelectedItem.HatAdi}" />
+        <Label Content="Kullanan Şoför Ad Soyad" HorizontalAlignment="Left" Margin="26,82,0,0" VerticalAlignment="Top" Width="146" Grid.Row="1"/>
+        <TextBox x:Name="hatSoforS" HorizontalAlignment="Left" Margin="216,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Grid.Row="1" MouseEnter="hatSoforS_MouseEnter" MouseLeave="hatSoforS_MouseLeave" Text="{Binding ElementName=dg1,Path=SelectedItem.HatSofor}" />
+        <Label Content="Hat Uzunluğu" HorizontalAlignment="Left" Margin="26,108,0,0" VerticalAlignment="Top" Width="125" Grid.Row="1"/>
+        <TextBox x:Name="hatUzunlukS" HorizontalAlignment="Left" Margin="216,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Grid.Row="1" MouseEnter="hatUzunlukS_MouseEnter" MouseLeave="hatUzunlukS_MouseLeave" Text="{Binding ElementName=dg1,Path=SelectedItem.HatUzunluk}" />
+        <Button Content="Sil" Click="btnDelete" HorizontalAlignment="Left" Margin="295,157,0,0" Grid.Row="1" VerticalAlignment="Top" Width="79"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" Text="Yeni Sefer Ekle" VerticalAlignment="Top" Width="385" FontWeight="Bold" TextAlignment="Center" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,14,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Seçili Sefer İşlemleri" VerticalAlignment="Top" Width="380" FontWeight="Bold" TextAlignment="Center" FontSize="16"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>
